@@ -1,0 +1,24 @@
+[Errno 2] No such file or directory: 'first.txt'Operation: +
+Result:
+10.0 10.0 10.0
+10.0 10.0 10.0
+10.0 10.0 10.0
+
+Operation: -
+Result:
+-8.0 -6.0 -4.0
+-2.0 0.0 2.0
+4.0 6.0 8.0
+
+Operation: *
+Result:
+30.0 24.0 18.0
+84.0 69.0 54.0
+138.0 114.0 90.0
+
+Operation: /
+Result:
+0.5 1.0 1.5
+2.0 2.5 3.0
+3.5 4.0 4.5
+
