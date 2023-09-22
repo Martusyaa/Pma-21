@@ -1,0 +1,30 @@
+Result of addition: 
+5.0, 7.0, 1.0
+
+Result of subtraction: 
+-3.0, -3.0, -5.0
+
+Result of multiplication: 8.0
+Result of division: 
+0.25, 0.4, -0.67
+
+Result of addition: 
+5.0, 7.0, 1.0
+
+Result of subtraction: 
+-3.0, -3.0, -5.0
+
+Result of multiplication: 8.0
+Result of division: 
+0.25, 0.4, -0.67
+
+Result of addition: 
+5.0, 7.0, 1.0
+
+Result of subtraction: 
+-3.0, -3.0, -5.0
+
+Result of multiplication: 8.0
+Result of division: 
+0.25, 0.4, -0.67
+
