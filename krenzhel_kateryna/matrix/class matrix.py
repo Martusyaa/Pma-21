@@ -3,7 +3,7 @@ import random
 INPUT_FILE_NAME = "input.txt"
 OUTPUT_FILE_NAME = "output.txt"
 FILE_NOT_FOUND = "File not found"
-NOT_DIVISION = "Division imposible."
+NOT_DIVISION = "Not Division."
 class Matrices:
     def __init__(self):
         try:
@@ -21,7 +21,7 @@ class Matrices:
         self.sum_matrix = self.sum()
         self.subtraction_matrix = self.subtraction()
         self.multiplication_matrix = self.multiplication(self.first_matrix, self.second_matrix)
-        self.division_matrix = self.division()
+        self.division_matrix = self.division(self.first_matrix, self.second_matrix)
 
     def print_matrix(self, file, first_matrix, second_matrix, result_matrix, operation):
         for i in range(len(first_matrix)):
@@ -134,30 +134,6 @@ class Matrices:
         except ZeroDivisionError:
             division_result = NOT_DIVISION
         return division_result
-
-    # def inverse_matrix(self, matrix):  # Обчислення оберненої матриці
-    #     det = self.determinant(matrix)
-    #     if det == 0:
-    #         return None  # Матриця є виродженою
-    #     cofactors = self.cofactor_matrix(matrix)
-    #     adjugate = self.transpose(cofactors)
-    #     inverse = [[element / det for element in row] for row in adjugate]
-    #     return inverse
-    #
-    # def inverse_matrix(self, matrix):  # Обчислення оберненої матриці
-    #     det = self.determinant(matrix)
-    #     try:
-    #         cofactors = self.cofactor_matrix(matrix)
-    #         adjugate = self.transpose(cofactors)
-    #         inverse = [[element / det for element in row] for row in adjugate]
-    #     except ZeroDivisionError:
-    #         inverse = NOT_DIVISION
-    #     return inverse
-    def division(self):
-        inverse_second_matrix = self.inverse_matrix(self.second_matrix)
-        division = self.multiplication(self.first_matrix, inverse_second_matrix)
-        return division
-
 
 obj = Matrices()
 obj.print()
