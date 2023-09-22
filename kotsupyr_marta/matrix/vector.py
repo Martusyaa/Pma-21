@@ -18,7 +18,7 @@ result_add = add(first_vector, second_vector)
 result_subtract = subtract(first_vector, second_vector)
 result_mult = multiply(first_vector,second_vector)
 result_divide = divide(second_vector, 2.0)
-with open(output_file, 'w') as output_file:
+with open(output_file, 'a') as output_file:
     output_file.write("Додавання: {}\n".format(result_add))
     output_file.write("Віднімання: {}\n".format(result_subtract))
     output_file.write("Множення: {}\n".format(result_mult))
