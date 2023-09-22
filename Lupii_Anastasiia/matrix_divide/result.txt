@@ -1,0 +1,28 @@
+Matrix first:
+1 2 3
+1 2 3
+1 2 3
+
+ Matrix second:
+4 2 3
+7 5 3
+9 4 6
+
+Division:
+7.0 0.0 -3.0
+7.0 0.0 -3.0
+7.0 0.0 -3.0
+Matrix first:
+1 2 3
+1 2 3
+1 2 3
+
+ Matrix second:
+4 2 3
+7 5 3
+9 4 6
+
+Multiplication:
+45 24 27
+45 24 27
+45 24 27
