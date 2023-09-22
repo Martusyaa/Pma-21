@@ -52,22 +52,6 @@ def transpose(matrix): # Функція для транспонування ма
         transposed_row = [matrix[i][j] for i in range(len(matrix))]
         transposed.append(transposed_row)
     return transposed
-# def inverse_matrix(matrix): # Обчислення оберненої матриці
-#     det = determinant(matrix)
-#     if det == 0:
-#         inverse = NOT_DIVISION
-#     else:
-#         cofactors = cofactor_matrix(matrix)
-#         adjugate = transpose(cofactors)
-#         inverse = [[element / det for element in row] for row in adjugate]
-#     return inverse
-# def division(first_matrix, second_matrix):
-#     try:
-#         inverse_second_matrix = inverse_matrix(second_matrix)
-#         division = multiplication(first_matrix, inverse_second_matrix)
-#     except ZeroDivisionError:
-#         division = NOT_DIVISION
-#     return division
 
 # Calculate the inverse of a matrix
 def inverse_matrix(matrix):
