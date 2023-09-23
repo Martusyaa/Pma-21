@@ -1,0 +1,4 @@
+Sum: 6, 8, 13, 10
+Substacrion: -2, 6, 5, -2
+Multiplication(Vector): 8, 7, 36, 24
+Division(Vector): 0.5, 7.0, 2.25, 0.6666666666666666
