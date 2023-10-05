@@ -58,14 +58,3 @@ class ArrayList:
 
         print("Масив після очищення:")
         self.array=[]
-
-
-
-
-
-
-
-
-
-        # for i in range(old_size, new_size):
-        #     self.array.append(0)
