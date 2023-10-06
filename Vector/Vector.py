@@ -28,7 +28,13 @@ class Vector:
         for i in range(self.size):
             result.vector[i] = self.vector[i] - a.vector[i]
         return result
-
+    
+    def scalar(self,scalar):
+        result = Vector(self.size)
+        for i in range(self.size):
+            result.vector[i] = self.vector[i] * scalar
+        return result
+    
     @validator
     def multiplication(self, a):
         result = Vector(self.size)
