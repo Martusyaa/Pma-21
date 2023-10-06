@@ -1,9 +1,15 @@
 class ArrayList:
     CAPACITY = 5
-    def __init__(self, array=[]):
+    def __init__(self, array=None):
+        if array is None:
+            array = []
         self.size = len(array)
-        self.array = array
-        self.capacity = ArrayList.CAPACITY
+        self.capacity = max(ArrayList.CAPACITY, self.size)
+        print("Нова ємність: ", self.capacity )
+        self.array = [0] * self.capacity
+        for i in range(self.size):
+            self.array[i] = array[i]
+
 
     def expansion(self):
         new_capacity = int(1.5 * self.size) + 1
@@ -26,17 +32,27 @@ class ArrayList:
     def print_array(self):
         print(f"{self.array}")
 
-    def delete_element(self):
-        if self.size==0:
-            raise ValueError("Неможливе видалення елемента,тому що масив пустий")
-        else:
-            print("Масив після видалення елемента:")
-            new_array = [0] * self.size
-            for i in range(self.size):
-                if i < self.size - 1:
-                    new_array[i] = self.array[i]
-            self.size -= 1
-            self.array = new_array
+    def delete_element(self, index=None):
+        if self.size == 0:
+            raise ValueError("Неможливе видалення елемента, тому що масив пустий")
+
+        if index is None:
+            index = self.size - 1  # Видаляємо останній елемент за замовчуванням
+
+        if index < 0 or index >= self.size:
+            raise ValueError("Неприпустимий індекс для видалення елемента")
+
+        print("Масив після видалення елемента:")
+        new_array = [0] * self.capacity
+
+        for i in range(index):
+            new_array[i] = self.array[i]
+
+        for i in range(index + 1, self.size):
+            new_array[i - 1] = self.array[i]
+
+        self.size -= 1
+        self.array = new_array
 
     def add_index(self, index, element):
         if index < 0 or index > self.size:

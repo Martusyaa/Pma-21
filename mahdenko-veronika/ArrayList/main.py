@@ -2,7 +2,8 @@ import random
 from ArrayList import ArrayList
 
 if __name__ == '__main__':
-    array = ArrayList([random.randint(1, 10) for i in range(ArrayList.CAPACITY)])
+    array = ArrayList([1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3])
+
     array.print_array()
     array.add_element(5)
     array.print_array()
