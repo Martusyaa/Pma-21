@@ -35,20 +35,6 @@ class Circle(Shape):
         return 3.14 * self.side**2
 
 
-class Square(Shape):
-
-    def __init__(self, color, side):
-        super().__init__(color)
-        self.color = color
-        self.side = side
-
-    def perimeter(self):
-        return 4 * self.side
-
-    def square(self):
-        return self.side**2
-
-
 class Rectangle(Shape):
 
     def __init__(self, color, side_a, side_b):
@@ -62,3 +48,9 @@ class Rectangle(Shape):
 
     def square(self):
         return self.side_a * self.side_b
+
+
+class Square(Rectangle):
+
+    def __init__(self, color, side):
+        super().__init__(color, side, side)

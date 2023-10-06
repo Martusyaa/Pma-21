@@ -13,10 +13,10 @@ def client_code(factory: AbstractFactory) -> None:
 
 
 if __name__ == "__main__":
-    print("Client: Testing client code with the first factory type:")
+    print("Client: Testing client code with the first abstract-factory type:")
     client_code(FirstConcreteFactory())
 
     print("\n")
 
-    print("Client: Testing the same client code with the second factory type:")
+    print("Client: Testing the same client code with the second abstract-factory type:")
     client_code(SecondConcreteFactory())

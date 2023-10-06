@@ -5,11 +5,21 @@ def main():
     linked_list = LinkedList()
     linked_list.add(1)
     linked_list.add(2)
+    linked_list.add(3)
+    linked_list.add(4)
+    linked_list.add(5)
 
-    linked_list2 = LinkedList(linked_list)
-    linked_list2.remove(0)
+    linked_list.remove(3)
 
-    print(linked_list.get(0))
+    for i in range(linked_list.size()):
+        print(linked_list.get(i))
+
+    print()
+
+    linked_list.add(66, 3)
+
+    for i in range(linked_list.size()):
+        print(linked_list.get(i))
 
 
 main()
