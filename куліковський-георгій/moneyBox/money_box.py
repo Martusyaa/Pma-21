@@ -1,10 +1,10 @@
 class Money_Box:
 
 
-    def __init__(self, max_amount, goal):
+    def __init__(self, max_amount, goal, current_amount=0):
         self.max_amount = max_amount
         self.goal = goal
-        self.current_amount = 0
+        self.current_amount = current_amount
 
 
     def add_coin(self):
