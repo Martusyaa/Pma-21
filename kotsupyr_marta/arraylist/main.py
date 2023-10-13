@@ -1,6 +1,5 @@
 ERROR = "Index out of range."
-
-NUMBER = 8
+NUMBER = 4
 class ArrayList:
     def __init__(self, array = []):
         self.len = NUMBER
@@ -15,13 +14,10 @@ class ArrayList:
         # return str([x for x in self.array[:self.size] if x is not None])
         return str([x for x in self.array[:self.size]])
 
-    # def __str__(self):
-    #     return "[" + ", ".join(str(x) if x is not None else "_" for x in self.array[:self.size]) + "]"
-    #     # return "[" + ", ".join(str(x) if x is not None else ' ' for x in self.array[:self.size]) + "]"
-    #     # return "[" + ", ".join(str(x) for x in self.array[:self.size] if x is not None) + "]"
     def print(self):
         print(self.array)
         print(self.__str__())
+
     def add(self, element):
         if self.size >= self.len:
             self.resise()
@@ -71,6 +67,9 @@ class ArrayList:
         index = self.index(element)
         if index is not None:
             self.pop(index)
+
+    def reverse(self):
+        self.array.reverse()
 
     def clean(self):
         self.size = 0
