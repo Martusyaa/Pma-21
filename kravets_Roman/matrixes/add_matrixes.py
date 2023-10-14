@@ -25,8 +25,8 @@ def add_matrices(matrix_first, matrix_second):
         result.append(row)
     return result
 
-matrix_first = read_matrix_from_file('matrixes/matrixes.txt')
-matrix_second = read_matrix_from_file('matrixes/readmatrix.txt')
+matrix_first = read_matrix_from_file('matrixes.txt')
+matrix_second = read_matrix_from_file('readmatrix.txt')
 
 if matrix_first is not None and matrix_second is not None:
     result_matrix = add_matrices(matrix_first, matrix_second)

@@ -41,8 +41,8 @@ def invert_matrix(matrix):
 
 
 try:
-    matrix1 = read_matrix('matrixes/first_matrix.txt')
-    matrix2 = read_matrix('matrixes/second_matrix.txt')
+    matrix1 = read_matrix('first_matrix.txt')
+    matrix2 = read_matrix('second_matrix.txt')
 
     inverted_matrix2 = invert_matrix(matrix2)
 
