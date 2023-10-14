@@ -61,8 +61,8 @@ class Matrix:
             for row in self.matrix:
                 file.write(' '.join(map(str, row)) + '\n')
 
-matrix_a = Matrix.from_file('matrix_a.txt')
-matrix_b = Matrix.from_file('matrix_b.txt')
+matrix_a = Matrix.from_file('matrixes/matrix_a.txt')
+matrix_b = Matrix.from_file('matrixes/matrix_b.txt')
 
 print("Матриця A:")
 print(matrix_a)
