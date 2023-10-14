@@ -14,7 +14,7 @@ def find_students_who_failed_session(file_name):
         with open(file_name, encoding='utf-8') as file:
             for line in file:
                 data = line.strip().split(',')
-                if len(data) !=4:
+                if len(data) != 4:
                     print("Invalid data format in the file.")
                     continue
                 student = Student(data)
