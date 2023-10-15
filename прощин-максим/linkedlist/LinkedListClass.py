@@ -55,38 +55,36 @@ class LinkedList:
             current.previous = None
 
     def insert_position(self, data, position):
-        current = self.head
-        count = 1
-        while current is not None:
-            if count == position - 1:
-                break
-            count += 1
-            current = current.next
-        if position == 1:
+        if position <= 1:
             self.insert_head(data)
-        elif current is None:
-            print("cant to insert")
-        elif current.next is None:
-            self.insert_tail(data)
         else:
             new_node = Node(data)
-            new_node.next = current.next
-            new_node.previous = current
-            current.previous = new_node
-            current.next = new_node
-            current.next.previous = new_node
+            current = self.head
+            count = 1
+            while current is not None:
+                if count == position - 1:
+                    break
+                current = current.next
+                count += 1
+            if current is None and count < position - 1:
+                print("cant to insert")
+            else:
+                new_node.next = current.next
+                new_node.previous = current
+                if current.next:
+                    current.next.previous = new_node
+                current.next = new_node
 
     def delete_position(self, position):
-        if self.isEmpty():
-            print("List is empty.")
-        elif position == 1:
+        if position <= 1:
             self.delete_head()
         else:
             current = self.head
             count = 1
             while current is not None:
                 if count == position:
-                    current.previous.next = current.next
+                    if current.previous:
+                        current.previous.next = current.next
                     if current.next:
                         current.next.previous = current.previous
                     current.next = None
