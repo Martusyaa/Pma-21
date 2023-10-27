@@ -25,7 +25,6 @@ class Circle(Shape):
 class Rectangle(Shape):
     def draw(self):
         return f"Rectangle drawn with {self.color.fill_color()} color."
-
     def calculate_area(self, length, width):
         return length * width
 
