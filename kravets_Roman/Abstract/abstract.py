@@ -18,13 +18,10 @@ class Blue(Color):
 class Circle(Shape):
     def draw(self):
         return f"Circle drawn with {self.color.fill_color()} color."
-
     def calculate_area(self, radius):
         return 3.14 * radius * radius
-
     def calculate_perimeter(self, radius):
         return 2 * 3.14 * radius
-
 class Rectangle(Shape):
     def draw(self):
         return f"Rectangle drawn with {self.color.fill_color()} color."
