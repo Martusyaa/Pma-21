@@ -1,6 +1,3 @@
-
-
-
 class MoneyBox:
 
     def __init__(self, storage_limit):
