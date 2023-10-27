@@ -1,7 +1,7 @@
 class Student:
     
     
-    def __init__(self, name:str, surname:str, date_of_birth:str, marks:list):
+    def __init__(self, name="Не вказано", surname="Не вказано", date_of_birth="Не вказано", marks="Не вказано"):
         self.name = name
         self.surname = surname
         self.date_of_birth = date_of_birth
