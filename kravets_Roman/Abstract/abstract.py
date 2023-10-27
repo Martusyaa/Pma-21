@@ -1,12 +1,7 @@
-# Abstract
 class Shape:
     def __init__(self, color):
         self.color = color
     def draw(self):
-        pass
-    def calculate_area(self):
-        pass
-    def calculate_perimeter(self):
         pass
 class Color:
     def fill_color(self):
@@ -23,17 +18,23 @@ class Blue(Color):
 class Circle(Shape):
     def draw(self):
         return f"Circle drawn with {self.color.fill_color()} color."
+
     def calculate_area(self, radius):
         return 3.14 * radius * radius
+
     def calculate_perimeter(self, radius):
         return 2 * 3.14 * radius
+
 class Rectangle(Shape):
     def draw(self):
         return f"Rectangle drawn with {self.color.fill_color()} color."
+
     def calculate_area(self, length, width):
         return length * width
+
     def calculate_perimeter(self, length, width):
         return 2 * (length + width)
+
 class Square(Shape):
     def draw(self):
         return f"Square drawn with {self.color.fill_color()} color."
@@ -41,6 +42,7 @@ class Square(Shape):
         return side * side
     def calculate_perimeter(self, side):
         return 4 * side
+
 if __name__ == "__main__":
     red_color = Red()
     green_color = Green()
