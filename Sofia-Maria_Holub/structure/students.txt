@@ -1,0 +1,4 @@
+Franko, Anna, 2002-01-15, 5 4 3 2 4
+Smoliarchuk, Anastasia, 2003-03-20, 5 5 4 5 5
+Svevcheko, Oleg, 2001-06-10, 4 4 3 3 3
+Palka, Olena, 2004-24-11, 5 4 5 3 4
