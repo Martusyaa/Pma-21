@@ -5,6 +5,9 @@ class Fibonacci:
         self.maxNum = maxNum
     
     def fibonacci(self, row=[]):
+        
+        fibonacci_operation = lambda a, b: (b, a + b)
+        
         if row == []:
             resultRow = [*self.row,]
         else:
@@ -14,8 +17,9 @@ class Fibonacci:
             resultRow.pop()
             return resultRow
         else:
-            resultRow.append(resultRow[-1] + resultRow[-2])
-            return self.fibonacci(resultRow)
+            a, b = fibonacci_operation(resultRow[-2], resultRow[-1])
+            resultRow.append(b)
+    
     
     def __str__(self):
         return str(self.fibonacci())

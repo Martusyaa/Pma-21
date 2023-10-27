@@ -4,7 +4,7 @@ from fibonacci import Fibonacci
 def readRow():
     
     
-    PATH = "input.txt"
+    PATH = "fibonacciFileReadWrite/input.txt"
     
     
     try:
@@ -18,7 +18,7 @@ def readRow():
 def readMax():
     
 
-    PATH = "maxNum.txt"
+    PATH = "fibonacciFileReadWrite/maxNum.txt"
     
     
     try:
@@ -32,7 +32,7 @@ def readMax():
 
 def writeFile(string):
     
-    PATH = "output.txt"
+    PATH = "fibonacciFileReadWrite/output.txt"
     
     
     try:
