@@ -1,0 +1,3 @@
+Oksana,Terletska,26.03.2005,81,75,90,85
+Vladko,Skolozdra,17.02.2008,35,51,74,51
+Lesia,Leskiv,09.02.1972,95,100,85,100
