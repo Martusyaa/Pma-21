@@ -39,10 +39,10 @@ def find_students_not_passing(students):
     return stream(students).filter(lambda student: student.average_grade() <= 61)
 
 students = read_students_from_file(data_file)
-dean_office_instance = Dekanat()
+dekanat_instance = Dekanat()
 not_passing_students = find_students_not_passing(students)
 
 if not_passing_students:
-    dean_office_instance.print_session_results(not_passing_students)
+    dekanat_instance.print_session_results(not_passing_students)
 else:
     print("Усі студенти склали сесію!")
