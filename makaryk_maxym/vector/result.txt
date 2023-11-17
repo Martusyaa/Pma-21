@@ -1,0 +1,4 @@
+Result of Addition: 5 7 9
+Result of Subtraction: -3 -3 -3
+Result of Multiplication: 32
+Result of Division: 0.25 0.4 0.5

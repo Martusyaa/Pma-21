@@ -1,0 +1,4 @@
+Marta,Billa,2005-06-15,75,82,90
+Volodia,Kogut,2005-12-20,58,65,32
+Anna,Shevchuk,2004-03-10,68,72,30
+Maksym,Williams,2004-08-05,90,58,55

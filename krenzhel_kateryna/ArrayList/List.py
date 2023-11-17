@@ -1,14 +1,15 @@
 ERROR = "Index out of range."
 
+NUMBER = 8
 class ArrayList:
-    def __init__(self, elements, array):
-        self.len = elements
+    def __init__(self, array = []):
+        self.len = NUMBER
         self.size = len(array)
         self.array = array
-        if len(self.array) > elements:
+        if len(self.array) > 0:
             self.resise()
-        # self.array = [None] * self.len
-        # self.array = [random.randint(1, 11) for i in range(elements)]
+        else:
+            self.array = [None] * self.len
 
     def __str__(self):
         # return str([x for x in self.array[:self.size] if x is not None])

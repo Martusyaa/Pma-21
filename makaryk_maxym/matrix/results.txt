@@ -1,0 +1,19 @@
+Matrix Addition:
+2.0 0.0 0.0
+0.0 2.0 0.0
+0.0 0.0 2.0
+
+Matrix Subtraction:
+0.0 0.0 0.0
+0.0 0.0 0.0
+0.0 0.0 0.0
+
+Matrix Multiplication:
+1.0 0.0 0.0
+0.0 1.0 0.0
+0.0 0.0 1.0
+
+Matrix Division:
+1.0 0.0 0.0
+0.0 1.0 0.0
+0.0 0.0 1.0

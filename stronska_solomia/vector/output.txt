@@ -1,0 +1,4 @@
+Addition Result: [3.0, 4.0]
+Subtraction Result: [1.0, 4.0]
+Division Result: [2.0, inf]
+Dot Product Result: 2.0

@@ -1,0 +1,27 @@
+{
+  "students":[
+
+    {
+      "name":"Anton",
+      "surname":"Foton",
+      "age": 21,
+      "marks": [51,62,93,12,54,76,82,90,79]
+    },
+
+    {
+      "name":"Petro",
+      "surname":"Electron",
+      "age": 18,
+      "marks": [1,1,1,12,51,34,15,32,41]
+
+    },
+
+    {
+      "name":"Sergiy",
+      "surname":"Plankton",
+      "age": 23,
+      "marks": [57,69,99,12,51,34,85,92,41]
+    }
+
+  ]
+}

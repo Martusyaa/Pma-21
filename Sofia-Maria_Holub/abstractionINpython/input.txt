@@ -1,0 +1,3 @@
+Circle, Red, 8
+Rectangle, Blue, 7, 6
+Square, Green, 4

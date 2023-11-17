@@ -1,0 +1,6 @@
+mul result
+0,0
+0,0
+
+div result
+Детермінант = 0
