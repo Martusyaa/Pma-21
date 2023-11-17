@@ -1,8 +1,6 @@
 class Dish:
-
-    def __init__(self,price:int):
+    def __init__(self,price):
         self.price = price
 
     def __str__(self):
-        return f"{self.price}"
-
+        return str(self.price)
