@@ -68,8 +68,6 @@ class ArrayList:
         if index is not None:
             self.pop(index)
 
-    def reverse(self):
-        self.array.reverse()
 
     def clean(self):
         self.size = 0
