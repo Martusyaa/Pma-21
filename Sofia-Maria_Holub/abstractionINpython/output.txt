@@ -1,0 +1,3 @@
+Red circle: Area = 200.96
+Blue rectangle: Perimeter = 26
+Green square: Area = 16
