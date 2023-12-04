@@ -1,4 +1,5 @@
 {
     "api_key": "your_api_key_here",
-    "secret_key": "your_secret_key_here"
+    "secret_key": "your_secret_key_here",
+    "binary key": "your_binary_key_here"
 }
