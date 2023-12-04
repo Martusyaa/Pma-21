@@ -1,50 +1,41 @@
-from node import Node
-
-
-class Linked_List:
-    
-    
-    def __init__(self, head:Node):
+class Linked_list:
+    def __init__(self):
         self.head = None
         
+    def __str__(self):
+        to_return = []
+        node_iterator = self.head
+        while node_iterator is not None:
+            to_return.append(node_iterator.value)
+            node_iterator = node_iterator.next
+        return str(to_return)
         
-    def add(self, new_node:Node):
+    def appendleft(self, new_head):
+        old_head = self.head
+        self.head = new_head
+        self.head.next = old_head
+        
+    def append(self, new_node):
         node_iterator = self.head
         if self.head == None:
             self.head = new_node
-        while node_iterator.next_node != None:
-            if node_iterator.next_node == None:
-                node_iterator.next_node = new_node
+        while node_iterator != None:
+            if(node_iterator.next is None):
+                node_iterator.next = new_node
                 break
             else:
-                node_iterator = node_iterator.next_node
-                
-                
-    def get_size(self):
-        node_iterator = self.head
-        size_value_to_return = 1
-        while node_iterator.next_node != None:
-            size_value_to_return += 1
-        return size_value_to_return
-            
-                
-                
-    def add_index(self, node:Node, index):
-        node_iterator = self.head
-        if index == 0:
-            self.head = node
-        elif self.get_size() < index - 1:
-            raise IndexError
-        elif index < 0:
-            raise IndexError
-        else:
-            for i in index:
-                node_iterator = node_iterator.next_node
-            node_iterator.next_node = node
+                node_iterator = node_iterator.next
                 
     
-    def __str__(self):
+    def remove_by_val(self, value):
         node_iterator = self.head
-        while node_iterator.next_node != None:
-            print(node_iterator)
-        print(node_iterator.next_node)
+        if node_iterator.value == value:
+            self.head = node_iterator.next
+            node_iterator = None
+            return
+        while node_iterator != None:
+            if node_iterator.value == value:
+                node_iterator.value = node_iterator.next.value
+                node_iterator.next = node_iterator.next.next
+                break
+            node_iterator = node_iterator.next
