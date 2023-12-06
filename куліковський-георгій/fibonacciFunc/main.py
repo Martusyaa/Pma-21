@@ -20,11 +20,11 @@ def fibonacci(base_list:list, steps:int):
     return result_list
 
 
-def read(path:str, type:str):
-    if type == "steps":
+def read(path:str, mode:str):
+    if mode == "steps":
         with open(path, "r") as file: 
             return int(file.read())
-    elif type == "numbers":
+    elif mode == "numbers":
         with open(path, "r") as file:
             return list(map(float, file.read().split()))
     else:
