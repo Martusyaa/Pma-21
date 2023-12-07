@@ -1,0 +1,1 @@
+<__main__.Vector object at 0x00000268EFC9D4D0> + <__main__.Vector object at 0x00000268EFC9D610> = None
