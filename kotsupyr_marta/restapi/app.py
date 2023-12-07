@@ -52,7 +52,7 @@ class Student(Resource):
         else:
             return STUDENTS[student_id]
 
-    def post(self, student_id):
+    def patch(self, student_id):
         parser_copy = parser.copy()
         parser_copy.add_argument("name")
         parser_copy.add_argument("age")
