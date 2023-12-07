@@ -1,0 +1,3 @@
+Ivan, Ivanov,18,15.9.2026, 15 20 3 9 25 11 1 4
+Jana, Petrova,19,11.1.2005, 0 5 9 0
+Michael, Zelenskyi,20,10.8.2005, 66 10 10

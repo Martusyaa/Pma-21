@@ -1,8 +1,6 @@
-from Student import Student
+from Student import Dekanat
 if __name__ == '__main__':
-    try:
-        filename = "Student.txt"
-        students = Student.read_matrix_from_file(filename)
-        Student.print_failed_students(students)
-    except FileNotFoundError:
-        print(f"Файл '{filename}' не знайдено.")
+    data_file = "Student.txt"
+    dekanat_instance = Dekanat()
+    dekanat_instance.read_matrix_from_file(data_file)
+    dekanat_instance.print_failed_students()

@@ -1,0 +1,2 @@
+class DifferentLengthsException(Exception):
+    pass

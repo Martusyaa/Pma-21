@@ -1,0 +1,2 @@
+class DifferentDimensionsException(Exception):
+    pass

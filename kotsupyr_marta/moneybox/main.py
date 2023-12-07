@@ -12,4 +12,3 @@ class MoneyBox:
             return False
 
 
-

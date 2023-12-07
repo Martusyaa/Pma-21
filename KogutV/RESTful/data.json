@@ -1,0 +1,22 @@
+{
+    "assets": [
+        {
+            "id": 1,
+            "name": "Gold",
+            "quantity": 100,
+            "price": 1800
+        },
+        {
+            "id": 2,
+            "name": "Silver",
+            "quantity": 200,
+            "price": 25
+        },
+        {
+            "id": 3,
+            "name": "Platinum",
+            "quantity": 50,
+            "price": 1200
+        }
+    ]
+}
