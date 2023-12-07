@@ -1,6 +1,7 @@
 from main import ArrayList
 my_list = ArrayList()
 my_list.add(1)
+
 my_list.add(2)
 my_list.add(3)
 print("List:",my_list)

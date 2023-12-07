@@ -1,5 +1,6 @@
 ERROR = "Index out of range."
 NUMBER = 4
+
 class ArrayList:
     def __init__(self, array = []):
         self.len = NUMBER
